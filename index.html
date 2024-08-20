@@ -12,20 +12,84 @@
       crossorigin="anonymous"
     />
     <!-- Import stylesheet -->
+
+    <style>
+      body{
+        background-color: #000000;
+      }
+
+    </style>
   </head>
   <body>
 
     <!-- Container for navbar and header -->
+     <div class="container-lg min-vh-75 p-4 ">
 
       <!-- Navigation Bar -->
-      
-      <!-- Burger Menu that targets the navigation with the id sitMenu -->  
+      <nav class="navbar navbar-expand-sm navbar-dark fw-lighter">
+
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Company logo" class="img-fluid"></a>
+          
+          <!-- Burger Menu that targets the navigation with the id sitMenu -->  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign-In/Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <!-- Header -->
+
+      <Header class="border border-1 rounded-4 text-center mt-2">
+        <h1 class="display-1 text-white fw-lighter">Sole Runner</h1>
+        <h4 class="display 6 text-white fw-lighter text-uppercase">Autumn Gear</h4>
+        <a class="btn btn-primary">Enter</a>
+      </Header>
       
     <!-- End for Container navbar and header -->
 
     <!-- Newsletter -->
+     
+  
+    <div class="container-lg mt-5 border">
+      <div class="d-flex flex-column">
+        <div class="text-white text-center fw-light pt-2 pb-2">
+          Subscribe to our Newsletter:
+        </div>
+
+        <!--Send form-->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send
+        
+        <!-- Send icon below here-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+        </svg>
+          </button>
+        </div>  
+      </div>  
+    </div>
+  </form>  
+
+
 
     <!-- Cards container -->
     
