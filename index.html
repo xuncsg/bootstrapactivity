@@ -11,14 +11,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <!-- Import stylesheet -->
+<link rel="stylesheet" href="styles/styles.css"
 
-    <style>
-      body{
-        background-color: #000000;
-      }
-
-    </style>
+   
   </head>
   <body>
 
@@ -57,10 +54,11 @@
 
       <!-- Header -->
 
-      <Header class="border border-1 rounded-4 text-center mt-2">
+      <Header class=" homebanner rounded-4 text-center pt-2
+      pb-2 d-flex flex-column align-items-center justify-content-center">
         <h1 class="display-1 text-white fw-lighter">Sole Runner</h1>
-        <h4 class="display 6 text-white fw-lighter text-uppercase">Autumn Gear</h4>
-        <a class="btn btn-primary">Enter</a>
+        <h4 class="display 6 text-white fw-lighter text-uppercase shadowe-ffects">Autumn Gear</h4>
+        <a class="btn btn-primary btn-primary-shadow text-uppercase fw-light">Enter</a>
       </Header>
       
     <!-- End for Container navbar and header -->
@@ -68,16 +66,21 @@
     <!-- Newsletter -->
      
   
-    <div class="container-lg mt-5 border">
+    <div class="container-lg mt-5">
       <div class="d-flex flex-column">
-        <div class="text-white text-center fw-light pt-2 pb-2">
+        <!--MODIFY THIS FOE THE SEARCH BAR CONTAINER-->
+        <div class="col-md-8 mx-auto">
+          <div class="text-white text-center fw-light pt-2 pb-2">
+        <!--Incorporate a container to decrease the size of the form-->    
           Subscribe to our Newsletter:
+          </div>
         </div>
 
         <!--Send form-->
+
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send
+          <button class="btn btn-warning" type="button" id="button-addon2">Send
         
         <!-- Send icon below here-->
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
@@ -89,14 +92,44 @@
     </div>
   </form>  
 
-
-
     <!-- Cards container -->
-    
-    
-    <!-- Footer - Copyright -->
-    
+  <div class="container mt-4 mb-4">
+    <div class="card-group homepage-card">
 
+      <div class=" homepage-card card mx-3 border-0 rounded-4">
+        <img src="img/comfort.jpg" class="card-img-top rounded-top-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-secondary fw-light">Uber comfort</h5>
+          <p class="card-text fw-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <div class=" homepage-card card mx-3 border-0 rounded-4">
+        <img src="/img/performance.jpg" class="card-img-top rounded-top-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-secondary fw-light">Made for performance</h5>
+          <p class="card-text text fw-light">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class=" homepage-card card mx-3 border-0 rounded-4">
+        <img src="img/outdoor.jpg" class="card-img-top rounded-top-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-secondary fw-light">All-weather Suit</h5>
+          <p class="card-text fw-light">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer - Copyright -->
+    <footer class="text-white fw-lighter text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        &copy; 2024 Copyright:
+        <a class="text-white text-decoration-none" href="#">Airstream &#8482 All rights reserved.</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
