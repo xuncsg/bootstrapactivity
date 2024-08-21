@@ -5,6 +5,8 @@
 *,*::before,*::after{
   margin:0;
   padding:0;
+  outline: 1px dashed #fff
+  ;
 }
 
 html{
@@ -80,7 +82,3 @@ body{
   /* text-indent: -9999px; */ /* remove or comment out text indent if all images are available */
 }
 
-.btn-warning{
-
-
-}
