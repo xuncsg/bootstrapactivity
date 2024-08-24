@@ -20,7 +20,7 @@ body{
   background-position: top center;
   background-size:cover;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /**Reduce BG brightness to 60%*/
   background-blend-mode: overlay;
 }
 
@@ -30,7 +30,7 @@ body{
 }
 
 .btn-warning{
-  background-color:#eabb38 !important;
+  background-color:#eabb38 !important; /**Warning Button**/
   border: none !important;
 }
 
@@ -44,10 +44,10 @@ body{
   box-shadow: .1rem .3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
-/* banner colours */
+/** banner colours */
 .homebanner{
   min-height: 50dvh;
-  background-image: url("../img/sneaker.jpg");
+  background-image: url("../img/sneaker.jpg"); /**Nesting one level up**/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,6 +79,6 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../img/imgplaceholder.png");
-  /* text-indent: -9999px; */ /* remove or comment out text indent if all images are available */
+  /** text-indent: -9999px; */ /* remove or comment out text indent if all images are available **/
 }
 
