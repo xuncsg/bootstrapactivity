@@ -5,6 +5,8 @@
 *,*::before,*::after{
   margin:0;
   padding:0;
+  outline: 1px dashed #fff
+  ;
 }
 
 html{
@@ -18,12 +20,17 @@ body{
   background-position: top center;
   background-size:cover;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /**Reduce BG brightness to 60%*/
   background-blend-mode: overlay;
 }
 
 .btn-primary{
   background-color:#ea383c !important;
+  border: none !important;
+}
+
+.btn-warning{
+  background-color:#eabb38 !important; /**Warning Button**/
   border: none !important;
 }
 
@@ -37,10 +44,10 @@ body{
   box-shadow: .1rem .3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
-/* banner colours */
+/** banner colours */
 .homebanner{
   min-height: 50dvh;
-  background-image: url("../img/sneaker.jpg");
+  background-image: url("../img/sneaker.jpg"); /**Nesting one level up**/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,13 +58,13 @@ body{
 }
 
 .homebanner h1{
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 196, 0, 0.75), rgba(255, 255, 255, 0))
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 196, 0, 0.75), rgba(255, 255, 255, 0));
 }
 
 .shadow-effects {
   color: transparent;
   letter-spacing: .10em;
-  text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.6);
+  text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.4);
 }
 
 .bg-primary{
@@ -72,5 +79,6 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../img/imgplaceholder.png");
-  /* text-indent: -9999px; */ /* remove or comment out text indent if all images are available */
+  /** text-indent: -9999px; */ /* remove or comment out text indent if all images are available **/
 }
+
